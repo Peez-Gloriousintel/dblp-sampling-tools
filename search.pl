@@ -1,4 +1,6 @@
 #!/usr/bin/perl -w
+# @author: pj4dev.mit@gmail.com
+# @url: https://github.com/Peez-Gloriousintel/dblp-sampling-tools
 
 die "Usage: $0 <keyword: (article|inproceedings|proceedings|book|incollection|phdthesis|mastersthesis|www)> <filename>\n" if (@ARGV != 2 or $ARGV[0] !~ /^(article|inproceedings|proceedings|book|incollection|phdthesis|mastersthesis|www)$/);
 $keyword = $ARGV[0];

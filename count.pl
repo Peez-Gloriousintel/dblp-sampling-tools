@@ -1,4 +1,6 @@
 #!/usr/bin/perl -w
+# @author: pj4dev.mit@gmail.com
+# @url: https://github.com/Peez-Gloriousintel/dblp-sampling-tools
 
 die "Usage: $0 <filename>\n" if (@ARGV != 1);
 open(FILE,"< $ARGV[0]");
