@@ -29,7 +29,7 @@ Usage: ./search.pl <keyword: (article|inproceedings|proceedings|book|incollectio
 ## Example
 dblp.xml with 20,000 records (from over millions of records) is provided as an example input file. You can validate the correctness of output file with dblp.dtd by using a unix command line tool: xmllint.
 ```
-$ perl gen.pl dblp.xml > sample.xml
+$ perl gen.pl dblp.xml 40 500 > sample.xml
 $ xmllint --noout --dtdvalid dblp.dtd sample.xml
 (new line) 
 $ perl count.pl sample.xml
@@ -44,5 +44,4 @@ inproceedings: 220
 total: 501
 $ perl search.pl inproceedings sample.xml
 1288: <inproceedings mdate="2015-05-05" key="journals/procedia/AkarsuK11"><author>Emre Akarsu</author><author>Adem Karahoca</author>
-$
 ```
